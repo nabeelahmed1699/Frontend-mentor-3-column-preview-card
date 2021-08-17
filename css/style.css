@@ -13,23 +13,29 @@
 
 body {
     font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 95%);
 }
 
 h3 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .card-container {
-    padding: 30px;
-    background: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
     padding: 40px;
     color: hsl(0, 0%, 95%);
+    height: 100%;
 }
 
 .bright-orange {
@@ -47,7 +53,7 @@ h3 {
 }
 
 .card img {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .card p {
@@ -57,7 +63,7 @@ h3 {
 }
 
 .btn {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border-radius: 20px;
     padding: 10px 20px;
     border: 2px solid hsl(0, 0%, 95%);
@@ -84,10 +90,9 @@ h3 {
 
 @media screen and (min-width: 775px) {
     .card-container {
-        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         max-height: 900px;
         margin: auto;
     }
